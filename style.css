@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: white;
+  --bg-url: url(./assets/bg-mobile-Darkmode.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-color: rgba(255, 255, 255, 0.2);
+  --highlight-color: rgba(0, 0, 0, 0.1);
+  --switch-bg-url: url(./assets/moonStars.svg);
+}
+
+ .tema-claro {
+  --text-color: black;
+  --bg-url: url(./assets/bg-mobile-Lightmode.jpg);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.5);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --switch-bg-url: url(./assets/sun.svg);
+  
+}
+
+body {
+  background: var(--bg-url) no-repeat top center/cover;
+}
+
+body * {
+  font-family: "Alegreya Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  color: var(--text-color);
+}
+
+#container {
+  width: 360px;
+  /* border: 1px solid red; */
+  margin: 56px auto 0px;
+  padding: 0 24px;
+}
+
+#profile {
+  text-align: center;
+  padding: 24px;
+}
+
+#profile img {
+  width: 112px;
+  border-radius: 30rem;
+}
+
+#profile p {
+  font-weight: 500;
+  line-height: 21px;
+  margin-top: 8px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 0;
+}
+
+/* swicth */
+#switch button{
+  width: 32px;
+  height: 32px;
+  background: white var(--switch-bg-url) no-repeat center;
+  border: 0;
+  border-radius: 50%;
+}
+#switch span{
+  width: 64px;
+  height: 24px;
+}
+
+/* links */
+ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 24px;
+  border-radius: 1rem;
+  background-color: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  /* webkit é um filtro para usar a propriedade em alguns navegadores */
+  text-decoration: none;
+  /* para tirar a linha embaixo */
+  font-weight: 500;
+  transition: background 0.5s;
+}
+
+ul li a:hover {
+  background-color: var(--surface-color-hover);
+  border: 1.5px solid var(--text-color);
+}
+
+#social-links {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+
+  padding: 24px 0;
+  font-size: 24px;
+  transition: background 0.2s;
+}
+
+#social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#social-links a:hover {
+  background: var(--highlight-color);
+  padding: 16px;
+  border-radius: 50%;
+}
+
+footer {
+  padding: 24px 0;
+  text-align: center;
+  font-size: 14px;
+}
