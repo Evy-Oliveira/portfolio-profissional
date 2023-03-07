@@ -3,8 +3,8 @@
 <p align="center">
 <a href="#descricao">Descrição</a> |
 <a href="#tecnologias">Tecnologias</a> |
-<a href="status">Status</a> |
-<a href="autor">Autor</a>
+<a href="#status">Status</a> |
+<a href="#autor">Autor</a>
 </p>
 
 ### Descriçao
