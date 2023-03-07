@@ -24,4 +24,4 @@ Projeto desenvolvido com as seguintes tecnologias:
 - Figma
 
 ### Autor
-Feito por [Evelyn Oliveira](https://linktr.ee/evyoliveira)
+Feito por [Evelyn Oliveira](https://evy-oliveira.github.io/portfolio-profissional/)
